@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Overflow</title>
+    <style>
+        /*Burada heigth 300px verdik ve text imiz border dan tasıyor
+        burada birincisi heigth vermeyerek text in border a oturmasını saglayabiliriz
+        ama bu her zaman istenilen bir durum degil
+        bu yüzden ikinci olarakta "overflow" attribu tunu kullanabiliriz*/
+        div {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            background: #f2f2f2;
+            overflow: scroll; 
+        }
+        /*"overflow: auto" ile tasan kısımdan keser ve tasan kısım için yanda 
+        scroll attribut u cıkarır ve onu asagı cekerek,tasan kısımı asagıda görürüz */
+        /*Tasmayan bir metinde overflow auto u kullanırsak eger, metin ne tarafa tasarsa,
+         o tarafta scroll cıkar mesela saga dogru sonradan ekleme yaptık ve saga dogru 
+         metin uzadı,asagıda scroll cıkar! veya asagya dogru metni uzatırsak,sagda scroll cıkar! 
+         Ama burada overflow scroll girersek, her halukarda sagda scroll cıkar ve metin 
+         asagıya doru tasarsa aktivlesir ama metin saga dogru tasarsa gene otomatik, asagıda 
+         saga kaydırabilecegimiz scroll cıkar*/
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio eligendi, dolore cupiditate consequuntur a debitis molestias? In nobis accusamus non expedita qui. Consectetur minus ipsam at tempore ex eligendi eaque unde quidem quod! Sit labore nam omnis explicabo voluptatem expedita tempore blanditiis odio iste atque. Voluptatibus sunt culpa cum corrupti.asdsadasdadadasdasdadasdadaaadaadadaadasdadadadadaaddasdadadasdas
+        asdsadasdadadasdasdadasdadaaadaadadaadasdadadadadaaddasdadadasdasasd
+        asd
+        asd
+        asd
+        asd
+        asdsadasdadadasdasdadasdadaaadaadadaadasdadadadadaaddasdadadasdasasdasd
+
+    </div>
+</body>
+</html>

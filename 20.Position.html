@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Position</title>
+    <style>
+        /*Burada position attribut unu ögreniyoruz
+        sadece position: fixed girersek giridiğimiz
+        positionda fixler*/
+        /* .fixed-topbar {
+            width: 50%;
+            padding: 20px;
+            background: red;
+            text-align: center;
+            color: white;
+            border-radius: 20px;
+            position: fixed;
+            right: 20px;
+        }
+div:hover {
+    background: white;
+    color: red;
+} */
+/*Burada position: relative attribu unu ögreniyoruz
+relative demek o an ki positionuna göre oynama 
+yapılabilecegi anlamına gelir!*/
+        /* .red {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            left: 10px;
+            z-index: 1;
+        }
+        .blue {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            position: relative;
+            top: -10px;
+            z-index: 2;
+        } */
+        /* .outer-box {
+            width: 200px;
+            height: 200px;
+            background: grey;
+        } */
+        /*position:absolute özelliği şöyle kullanılır;
+        hangi div vs içinde kullandı isek ona bir 
+        position: relative girmemiz lazım yoksa 
+        0,0 noktasını bir üst noktaya giderek bulmaya
+        çalışır!!Yani absolute de kesin bir position 
+        tanımlaması yapmalıyız kafa karısıklıgı olmaması için!!!*/
+        /* .inner-box {
+            width: 50px;
+            height: 50px;
+            background: blue;
+            position: absolute;
+        } */
+        /*position:relative i basta en sol üstte gördük
+        ve daha sonra bir relative position atadık ancak 
+        sol bastaki yere yazılar gelmedi çünkü tarayıcımız
+        hayla span imizi orada hayal ediyor!*/
+        span {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            background: red;
+            position:relative;
+            left: 75px;
+            top: 50px;
+            z-index: -1;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- <div class="fixed-topbar">Udemy</div> -->
+    <!-- <div class="red"></div>
+    <div class="blue"></div> -->
+    <!-- <div class="outer-box">
+        <div class="inner-box"></div>
+    </div> -->
+    <span></span>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur asperiores suscipit, ex quidem eos voluptates ipsum, similique in voluptas perspiciatis modi laudantium nostrum alias nam?
+</body>
+</html>

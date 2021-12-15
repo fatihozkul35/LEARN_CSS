@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Fonts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /*neden sadece arial yazmadık! Çünkü eğer cihazımızda arial yoksa
+        helvatica olarak gösterecektir(o da yoksa san-serif gösterilecek)!
+        Bu yüzden iki farklı font girdik!!---- Geniş kapsamlı yazı font ları
+         "google fonts" adresinden bulunabilir*/
+        /* h1 {
+            font-family: "Open Sans", sans-serif;
+        }
+        /*Şimdiye kadar hep px olarak değer girdik, bu büyük bir tasarımda söyle bir sorun acıga cıkarabilir, 
+        mesela herhangi bir px degerini degiştirdiğimiz zaman sayfada baska degişiklikler yapmamız gerekebilir!
+        Bu yüzden relative(göreceli) ölçü birimlerini CSS de kullanabiliriz(W3schools dan/CSS Unit/relative lengths)!!*/
+        /*1.5em=16px*1.5=24px(normal line-heigth değeri 16px dir
+        p {
+            font-size: 1.5rem;
+            /* line-height: 1.5em;       
+        } */
+        /* div {
+            font-size: 20px;
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+        } */
+        /*Burada yukarıda div in front-size nı 20px girdiğimiz için
+        div span ın font-size 15px oldu eger öncesinde bir tanımlama yapmasa idik 16*75%= 12px olacaktı!*/
+        /* div span {
+            font-size: 75%;
+        } */
+        p {
+            font-size: 1.5rem;
+            font-style: italic;
+            font-weight: bold;           
+        }
+    </style>
+</head>
+<body>
+    <h1>BASLIK 1</h1>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque <span>officia</span> laborum, vero molestiae non asperiores voluptate autem nostrum dignissimos ratione culpa quos quo fugit commodi, alias maxime quaerat magnam, ducimus pariatur enim quod ab cumque corrupti? Alias temporibus doloribus maiores iste, ad vitae, fuga magnam iure quisquam iusto officia reprehenderit!</p>
+    </div>
+         <!-- <h1>Baslık 1</h1>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias labore velit quis aperiam corporis. Accusantium voluptatem magni modi illo maxime porro quidem odit doloremque? Quis rem debitis veniam! Non nobis corporis nisi obcaecati qui amet repellendus dignissimos omnis numquam sit asperiores quasi nemo quo molestias, vitae autem inventore unde? Illo.</p> -->
+</body>
+</html>

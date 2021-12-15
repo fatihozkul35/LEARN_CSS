@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Display</title>
+    <style>
+        /*Display block element oldugu için box-2 direkt alta geldi
+        inline element olsadı yanına gelecekti!*/
+        /* .box {
+            width: 50%;
+            height: 100px;
+        }
+        .box-1 {
+            background: red;
+        }
+        .box-2 {
+            background: blue;
+        } */
+        /*görüldüğü gibi direkt width ve heigth veremiyoruz!*/
+        /* #test link {
+            width: 100px;
+            height: 100px;
+        } */
+        /*ancak biz inline-block atarsak gecici block yaparak display block 
+        özelliğinden faydalanırız ve width heigth ataması yapabiliriz!z.b. 
+        man kann sehen vom folgenden Beispiel*/
+        #test-link {
+            display: inline-block;
+            background: #a7a7a7;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!--a etiketi ise inline bir element ve kapladıgı alan otomatik
+    atanıyor ve yinede biz width heigth veremiyoruz ancak
+inline block element olarak kullanırsak onu gecici block elementmis
+gibi width ve heigth verebiliriz-->
+    <a href="#" id="test-link">Test Link</a>
+    <!-- <div class="box box-1"></div>
+    <div class="box box-2"></div> -->
+</body>
+</html>

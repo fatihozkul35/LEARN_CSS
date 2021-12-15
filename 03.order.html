@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order/çalışma sırası</title>
+    <style>
+        /*Sonradan girilen değer bir öncekini ezer,
+        eğer ezmesin istiyorsak yanına "!important" yazmalıyız*/
+        /* h1 {
+            color: red !important;
+        }
+        #logo {
+            color: blue;
+        } */
+    </style>
+    
+
+
+    <!--Burada da sıralama değimez, sonradan girilen style2 css dosyası
+    style1 css dosyasını ezecektir-->
+    <!-- <link rel="stylesheet" href="./style1.css">
+    <link rel="stylesheet" href="./style2.css"> -->
+</head>
+<body>
+    <h1>Header 1</h1>
+    <h1 id="logo">Logo</h1>
+    <ul>
+        <li>
+        <a href="#">Contact</a>    
+        </li> <br>
+        <li>
+            <a href="#">Service</a>
+        </li> <br>
+    </ul>
+    <h1 id="logo">Header 2</h1>
+    <p id="logo" class="lead info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, beatae?</p>
+    <p class="info">Lorem ipsum, <span class="primary">dolor</span> sit amet consectetur adipisicing elit. Quidem, beatae?</p>
+    <p class="info">Lorem ipsum, <span>dolor</span> sit amet consectetur adipisicing elit. Quidem, beatae?</p>
+    <p>Test Paragraph</p>
+<a href="#">Home</a>
+</body>
+</html>

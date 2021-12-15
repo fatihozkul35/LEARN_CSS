@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Margin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        div.box-1 {
+            /*sadece top-bottom seklinde de verilebiliyor*/
+            /* margin: 50px 20px; */
+            /*saat yönünde top left bottom rigth seklinde tek satırda
+            verilebilir*/
+            /* margin: 50px 10px 50px 10px; */
+            /*ya da ayrı ayrı verilebilir*/
+            /* margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 50px;
+            margin-bottom: 50px; */
+            background: #a7a7a7;
+            max-width: 50%;
+            /*bu sekilde otomatik de ayarlanır*/
+            /* margin-left: auto;
+            margin-right: auto; */
+            /*yine tek satırda yazılabilir
+            z.b. top ve bottom 0 rigth ve left auto*/
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, saepe!</p>
+    </div>
+</body>
+</html>

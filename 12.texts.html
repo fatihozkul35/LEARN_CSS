@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Texts</title>
+    <style>
+        /*Bu özellik(text-align) saga sola yaslama özelliği, aynı zaman da box larda da
+        bu attribut u kullanabiliriz*/
+        /* h1 {
+            background: seashell;
+        }
+        .heading1 {
+            text-align: center;
+        }
+        .heading2 {
+            text-align: left;
+        }
+        .heading3{
+            text-align: right;
+        } */
+        /*letter-spacing de harflerin arasını acar*/
+        p {
+            letter-spacing: 1px;
+        }
+        div {
+            width: 400px;
+            height: 400px;
+            box-sizing: border-box;
+            border: 2px solid red;
+            text-align: center;
+        }
+        /* text-decoration ile de text i dekore edilebilir z.b. 
+        line-trought ile ipsum un üzerini çizdik ya da
+        underline ile altı çizilebilir,
+        overline ile de üstü çizilebilir*/
+        span {
+            text-decoration: un;
+        }
+        a {
+            text-decoration: none;
+        }
+        /*text-transform özelliği ile de text leri hızlıca büyük/ küçük yada sadece bas harf büyük yazılabilir*/
+        h1 {
+            text-transform: uppercase ; /*capitalize sadece bas harfi büyütür
+            uppercase ise hepsini büyük harfe cevirir*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>article 1</h1>
+        <p>Lorem <span>ipsum</span> dolor sit <a href="#">amet</a> consectetur adipisicing elit. Rem, consequatur.</p>
+    </div>
+    <!-- <h1 class="heading1">Baslık 1</h1>
+    <h1 class="heading2">Baslık 2</h1>
+    <h1 class="heading3">Baslık 3</h1> -->
+</body>
+</html>

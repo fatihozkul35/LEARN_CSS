@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Basic-Selectors</title>
+    <style>
+        /* #(diyez) ile sadece *id 'ye özel still girebiliyoruz*/
+    /* #logo { 
+        color: crimson;
+        background: darkgoldenrod;
+    }
+    /* .(nokta) ile ise sadece class ın içinde info yazılanlara
+         skill girebiliriz*/
+    /* .info { 
+        color: darkgreen;
+        background: darkmagenta;
+    } */
+    /* h1,p {
+        color: red;
+        background: blue;
+    } */
+    /* , burada "ve" anlamı taşır, hem id sinde "#logo" olanları seçer
+    hemde class ından ".lead" olanları */
+    /* #logo, .lead {
+        color: red;
+        background: blue;
+    } */
+/* Burda ise id sinde #logo olanların içinden class ında lead olanı arar*/
+/* #logo.lead {
+    color: blueviolet;
+    background: cadetblue;
+} */
+/*burada bütün a ların altındaki cizgileri yok edecegiz
+*/
+/* a {
+    text-decoration: none;
+} */
+/*Burada ul nin altındaki li ilerdeki a ların altındaki çizgileri
+kaldırıyoruz***hiyerarşik bir yapıya inerken
+bir boşluk bırakmak yeterli*/
+/* ul li a {
+    text-decoration: none;
+} */
+/* burada da hiyerarşik bir yapıya iniyoruz*/
+/* .info span {
+    color: red;
+} */
+/* .info .primary {
+    color: blue;
+} */
+/*burada bütün etiketleri değiştiriyoruz*/
+/* * {
+    font-size: 20px;
+} */
+/*ÖNEMLİ BİR NOT;
+#(diyez) id seciminde
+.(nokta) class seciminde kullanılır*/
+</style>
+</head>
+<body>
+    <h1>Header 1</h1>
+    <h1 id="logo">Logo</h1>
+    <ul>
+        <li>
+        <a href="#">Contact</a>    
+        </li> <br>
+        <li>
+            <a href="#">Service</a>
+        </li> <br>
+    </ul>
+    <h1 id="logo">Header 2</h1>
+
+    <p id="logo" class="lead info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, beatae?</p>
+    <p class="info">Lorem ipsum, <span class="primary">dolor</span> sit amet consectetur adipisicing elit. Quidem, beatae?</p>
+    <p class="info">Lorem ipsum, <span>dolor</span> sit amet consectetur adipisicing elit. Quidem, beatae?</p>
+    <p>Test Paragraph</p>
+<a href="#">Home</a>
+</body>
+</html>

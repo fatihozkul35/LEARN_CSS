@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo Class(State)</title>
+    <style>
+        /*
+        selector:pseudo_class {
+            
+        }
+        */
+        /*buradaki attributların amacından biraz bahsedeli;
+        a:link--- link ilk görüldüğünde cıkan renk
+        a:visited--- link tıklandıktan sonra cıkacak renk ama
+        sayfa yenilensede degişmez cünkü bir kere tıklandı
+        a:hover--- üzerinde gezinirken cıkacak renk
+        a:active---üzerinde tıkladıgım ama henüz mausu bırakmadıgım
+        an cıkacak renk
+        ?--- burada active bende calısmadı ama üzerinde durmadım!*/
+        /* a {
+            font-size: 1.5rem;
+        }
+        a:link {
+            color: green;
+        }
+        a:visited {
+            color: black;
+        }
+        a:hover {
+            color: red;
+        }
+        a:active {
+            color: blue;
+        } */
+        /* input {
+            font-size: 1.5em;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid black;
+        }
+        /*input:focus da oraya tıkladıgımız/focuslandıgımız
+         zaman olusacak attributları veriyoruz*/
+        /*input:focus {
+            outline: 0;
+            border: 2px solid red;
+        } */
+        /*GÜZEL BİR ÖRNEK*/
+        a {
+            color: white;
+            font-size: 24px;
+            display: inline-block;
+            background: blue;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        a:hover {
+            background: white;
+            color: blue;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Facebook</a>
+    <!-- <input type="text" placeholder="Name"> -->
+</body>
+</html>
